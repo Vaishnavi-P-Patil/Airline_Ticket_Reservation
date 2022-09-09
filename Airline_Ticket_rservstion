@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include<string.h>
+
+
+int main()
+{
+    int option,cls,amount,num,password,pass;
+    char name;
+    printf("******************************************* WELCOME TO INDIAN AIRLINES ***********************************************");
+    printf("\n----------------------------------------------------------------------------------------------------------------------");
+    printf("\n*************************** WELCOME TO KOLHAPUR AIRPORT **************************************************************");
+    printf("\n----------------------------------------------------------------------------------------------------------------------");
+    printf("\n Enter your password :",pass);
+    scanf("%d",&pass);
+    if (pass == 2909){
+    printf("\n Choose your option for further process:");
+    printf("\n 1. Reservation \n 2. Buying \n 3. Logout");
+    printf("\n Option :", option);
+    scanf("%d",&option);
+    switch(option)
+     {case 1 : printf("You choose option 1 : Reservation.... ");
+             printf("\nChoose your class :");
+             printf("\n1. Economy \n 2. Bussiness");
+             printf("\nClass :",cls);
+             scanf("%d",&cls);
+             if(cls == 1){
+
+                    printf("\nYou have choosen economy class");
+                    printf("\nEnter your name: ",&name);
+                    scanf("%s",&name);
+                    printf("\n Amount for 1 reservation = 5000");
+                    printf("\n Enter your reservations :", num);
+                    scanf("%d",&num);
+                    amount = num*5000;
+                    printf("\n You have to pay RS %d",amount);
+                    scanf("%d",&amount);
+                    }
+                else{printf("\nYou have choosen Bussiness class");
+                    printf("\nEnter your name: ",&name);
+                    scanf("%s",&name);
+                    printf("\n Amount for 1 reservation = 8000");
+                    printf("\n Enter your reservations :", num);
+                    scanf("%d",&num);
+                    amount = num*8000;
+                    printf("\n You have to pay RS %d",amount);
+                    scanf("%d",&amount);
+                }
+                    printf("\nYour reservation is done!!!!!!!!!!!");
+                    break;
+
+        case 2 : printf("You choose option 2 : Ticket buying.... ");
+             printf("\nChoose your class :");
+             printf("\n1. Economy \n 2. Bussiness");
+             printf("\nClass :",cls);
+             scanf("%d",&cls);
+             if(cls == 1){
+
+                    printf("\nYou have choosen economy class");
+                    printf("\nEnter your name: ",&name);
+                    scanf("%s",&name);
+                    printf("\n Amount for 1 ticket buying = 5000");
+                    printf("\n Enter your number of tickrts :", num);
+                    scanf("%d",&num);
+                    amount = num*5000;
+                    printf("\n You have to pay RS %d",amount);
+                    scanf("%d",&amount);
+             }
+
+                else{printf("\nYou have choosen Bussiness class");
+                    printf("\nEnter your name: ",&name);
+                    scanf("%s",&name);
+                    printf("\n Amount for 1 ticket buying = 8000");
+                    printf("\n Enter your number of tickrts :", num);
+                    scanf("%d",&num);
+                    amount = num*8000;
+                    printf("\n You have to pay RS %d",amount);
+                    scanf("%d",&amount);}
+                    printf("\nYour tiket buying is done!!!!!!!!!!!");
+                    break;
+
+
+        case 3:printf("\n You have choosen option 3 : Logout");
+                printf("\n Enter your name :", name);
+                scanf("%s",&name);
+                printf("\n Enter password:",password);
+                scanf("%d",&password);
+                if(pass == password)
+                    {
+                    printf("You have logged out successfully!!!!!!!!!!!");
+                }
+                else{
+                    printf("Check your password");
+                }
+                    }}
+    return 0 ;
+}
